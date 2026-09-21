@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thamsar Echoes Homestay — Coming Soon</title>
+    <link rel="icon" href="thamsar-logo.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  </head>
+  <body class="min-h-screen bg-black text-stone-100">
+    <main class="flex min-h-screen flex-col items-center justify-center px-6 text-center">
+      <img
+        id="logo"
+        src="thamsar-logo.jpg"
+        alt="Thamsar Echoes"
+        class="w-52 sm:w-64"
+      />
+      <p id="place" class="mt-8 text-xs uppercase tracking-[0.28em] text-stone-400">
+        Rajgundha Valley
+      </p>
+      <p id="soon" class="mt-4 text-sm uppercase tracking-[0.35em] text-stone-300">
+        Coming soon
+      </p>
+    </main>
+    <script>
+      gsap.from(["#logo", "#place", "#soon"], {
+        y: 16,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.12,
+        ease: "power2.out",
+      });
+    </script>
+  </body>
+</html>
