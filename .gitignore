@@ -1,0 +1,25 @@
+# npm / node — not used for GitHub Pages hosting
+node_modules/
+package.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+npm-debug.log*
+.npm/
+
+# local Tailwind rebuild helpers (compiled CSS lives in vendor/)
+tailwind.config.js
+src/
+
+# junk / local only
+.thumbs/
+.DS_Store
+
+# original camera dumps — site uses images/web and images/stock only
+images/IMG_*
+images/*.MOV
+images/*.mov
+images/*.JPG
+images/*.JPEG
+images/*.heic
+images/*.HEIC

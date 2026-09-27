@@ -1,36 +1,1157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thamsar Echoes Homestay — Coming Soon</title>
-    <link rel="icon" href="thamsar-logo.jpg" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  </head>
-  <body class="min-h-screen bg-black text-stone-100">
-    <main class="flex min-h-screen flex-col items-center justify-center px-6 text-center">
-      <img
-        id="logo"
-        src="thamsar-logo.jpg"
-        alt="Thamsar Echoes"
-        class="w-52 sm:w-64"
-      />
-      <p id="place" class="mt-8 text-xs uppercase tracking-[0.28em] text-stone-400">
-        Rajgundha Valley
-      </p>
-      <p id="soon" class="mt-4 text-sm uppercase tracking-[0.35em] text-stone-300">
-        Coming soon
-      </p>
-    </main>
-    <script>
-      gsap.from(["#logo", "#place", "#soon"], {
-        y: 16,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.12,
-        ease: "power2.out",
-      });
+    <title>Thamsar Echoes Homestay | Rajgundha Valley near Bir Billing, Himachal</title>
+    <meta
+      name="description"
+      content="Family-run Rajgundha (Rajgunda) Valley homestay near Bir Billing & Barot. Rooms with meals, camping tents, bonfire, parking and local rajma shop. Book on WhatsApp."
+    />
+    <meta
+      name="keywords"
+      content="Rajgundha homestay, Rajgunda homestay, Rajgundha Valley stay, Bir Billing homestay, stay near Bir Billing, Barot Valley stay, camping in Rajgundha, tent stay Rajgundha, Thamsar Pass base camp, Dhauladhar homestay, Kangra family homestay, offbeat Himachal, Uhl River, Palachak trek, Hanuman Garh, Thamsar Echoes"
+    />
+    <meta name="author" content="Thamsar Echoes Homestay" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0C1620" />
+    <meta name="geo.region" content="IN-HP" />
+    <meta name="geo.placename" content="Rajgundha Valley, Kangra, Himachal Pradesh" />
+    <meta name="geo.position" content="32.1014221;76.7674519" />
+    <meta name="ICBM" content="32.1014221, 76.7674519" />
+
+    <link rel="canonical" href="https://thamsarechoes.com/" />
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="logo.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="Thamsar Echoes Homestay" />
+    <meta property="og:url" content="https://thamsarechoes.com/" />
+    <meta property="og:title" content="Thamsar Echoes Homestay | Rajgundha Valley near Bir Billing" />
+    <meta
+      property="og:description"
+      content="Family-run stay in Rajgundha Valley — valley-view rooms, home kitchen meals, bonfire nights and tents, about two hours from Bir Billing."
+    />
+    <meta property="og:image" content="https://thamsarechoes.com/images/web/valley-03.jpg" />
+    <meta property="og:image:alt" content="Pines and open valley floor at Rajgundha, Himachal Pradesh" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Thamsar Echoes Homestay | Rajgundha Valley" />
+    <meta
+      name="twitter:description"
+      content="Family-run homestay near Bir Billing — rooms, meals, bonfire, tents. Book on WhatsApp."
+    />
+    <meta name="twitter:image" content="https://thamsarechoes.com/images/web/valley-03.jpg" />
+
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="vendor/tailwind.css" />
+    <link rel="stylesheet" href="site.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "@id": "https://thamsarechoes.com/#homestay",
+        "name": "Thamsar Echoes Homestay",
+        "alternateName": "Thamsar Echoes",
+        "description": "Family-run homestay in Rajgundha Valley near Bir Billing, Himachal Pradesh. Valley-facing rooms, home-cooked meals, bonfire evenings, camping tents and parking.",
+        "url": "https://thamsarechoes.com/",
+        "telephone": "+918219667142",
+        "image": [
+          "https://thamsarechoes.com/images/web/valley-03.jpg",
+          "https://thamsarechoes.com/images/web/room-05.jpg",
+          "https://thamsarechoes.com/images/web/dining-01.jpg"
+        ],
+        "logo": "https://thamsarechoes.com/logo.png",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rajgundha Village",
+          "addressLocality": "Rajgundha",
+          "addressRegion": "Himachal Pradesh",
+          "postalCode": "176125",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 32.1014221,
+          "longitude": 76.7674519
+        },
+        "hasMap": "https://maps.app.goo.gl/CWvBi8RMSiuv8ZZd7",
+        "sameAs": [
+          "https://maps.app.goo.gl/CWvBi8RMSiuv8ZZd7",
+          "https://instagram.com/thamser.echoes"
+        ],
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Free parking", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Home-cooked meals", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Bonfire", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Camping tents", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Mountain views", "value": true }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.3",
+          "reviewCount": "9",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://wa.me/918219667142",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "LodgingReservation",
+            "name": "WhatsApp booking enquiry"
+          }
+        }
+      }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where is Thamsar Echoes Homestay?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Thamsar Echoes is a family-run homestay in Rajgundha Valley (also spelled Rajgunda), Kangra district, Himachal Pradesh — about 30 km / two hours from Bir Billing, or reachable via Barot and Badagran in the Dhauladhar range."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I trek from Billing and camp at Rajgundha?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Guests often taxi to Billing and trek into Rajgundha, or drive the full road. Thamsar Echoes offers rooms and can arrange camping tents near the house."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book a stay in Rajgundha Valley?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Message Thamsar Echoes on WhatsApp at +91 82196 67142 with your dates and group size. There are no agents or booking fees."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are meals and parking included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Breakfast, lunch and dinner are cooked at the house. On-site parking is available, and bonfire evenings or camping tents can be arranged."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What can I do near Rajgundha Valley?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Walks to the Uhl River and Hanuman Garh, day treks to Palachak, longer routes toward Thamsar Pass, and paragliding at Bir Billing on the ridge you drive in over."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="bg-sand font-sans text-ink antialiased">
+    <a
+      href="#welcome"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded focus:bg-ink focus:px-4 focus:py-2 focus:text-sand"
+      >Skip to content</a
+    >
+
+    <div
+      id="progress"
+      class="fixed inset-x-0 top-0 z-[65] h-0.5 origin-left scale-x-0 bg-mint"
+      aria-hidden="true"
+    ></div>
+
+    <!-- ================= NAV ================= -->
+    <header
+      id="nav"
+      class="fixed inset-x-0 top-0 z-50 transition-all duration-300"
+    >
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-10">
+        <a href="#top" class="flex items-center gap-3">
+          <img
+            src="logo.png"
+            alt=""
+            class="h-12 w-12 object-contain drop-shadow"
+          />
+          <span id="nav-name" class="font-display text-lg tracking-wide text-white transition-colors">
+            Thamsar Echoes
+          </span>
+        </a>
+
+        <nav class="hidden items-center gap-6 lg:flex">
+          <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="#stay">Rooms</a>
+          <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="#experiences">Experiences</a>
+          <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="#explore">Explore</a>
+          <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="#food">Food</a>
+          <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="shop.html">Shop</a>
+          <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="#gallery">Gallery</a>
+          <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="#reach">Reach us</a>
+          <a
+            data-book
+            class="rounded-full bg-mint px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-white"
+            href="#book"
+            >Book on WhatsApp</a
+          >
+        </nav>
+
+        <button
+          id="menu-btn"
+          class="rounded-full border border-white/30 p-2.5 text-white lg:hidden"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- mobile menu -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 z-[55] hidden flex-col justify-center bg-ink/97 px-8 text-center backdrop-blur"
+    >
+      <button id="menu-close" class="absolute right-5 top-5 p-3 text-white" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+      <nav class="flex flex-col gap-7">
+        <a class="m-link font-display text-3xl text-sand" href="#stay">Rooms</a>
+        <a class="m-link font-display text-3xl text-sand" href="#experiences">Experiences</a>
+        <a class="m-link font-display text-3xl text-sand" href="#explore">Explore</a>
+        <a class="m-link font-display text-3xl text-sand" href="#food">Food</a>
+        <a class="m-link font-display text-3xl text-sand" href="shop.html">Shop</a>
+        <a class="m-link font-display text-3xl text-sand" href="#gallery">Gallery</a>
+        <a class="m-link font-display text-3xl text-sand" href="#reach">Reach us</a>
+        <a data-book class="m-link mt-3 font-display text-3xl text-mint" href="#book">Book on WhatsApp</a>
+      </nav>
+    </div>
+
+    <!-- ================= HERO ================= -->
+    <section id="top" class="relative h-[100svh] min-h-[640px] w-full overflow-hidden bg-ink">
+      <!-- slides: the first one loads immediately, the rest only after the page settles -->
+      <div id="hero-media" class="absolute inset-0 h-[115%] w-full">
+        <img
+          class="hero-slide absolute inset-0 h-full w-full object-cover"
+          src="images/web/valley-03.jpg"
+          alt="Pines, cloud and the open floor of Rajgundha Valley"
+        />
+        <img
+          class="hero-slide absolute inset-0 h-full w-full object-cover opacity-0"
+          data-src="images/web/view-02.jpg"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="hero-slide absolute inset-0 h-full w-full object-cover opacity-0"
+          data-src="images/web/valley-07.jpg"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
+
+      <div class="absolute inset-0 bg-gradient-to-b from-ink/75 via-ink/25 to-ink/95"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/20 to-transparent"></div>
+
+      <div
+        class="relative mx-auto flex h-full max-w-7xl flex-col justify-end px-5 pb-[11.5rem] sm:pb-44 lg:px-10 lg:pb-32"
+      >
+        <p id="hero-eyebrow" class="text-[0.65rem] uppercase tracking-[0.22em] text-mint sm:text-xs sm:tracking-[0.3em]">
+          Thamsar Echoes · Rajgundha Valley · 2,700 m
+        </p>
+
+        <h1
+          id="hero-title"
+          class="mt-4 max-w-3xl font-display text-[2.05rem] font-light leading-[1.05] text-white sm:mt-5 sm:text-6xl lg:text-7xl"
+        >
+          Where the road ends and the mountains begin
+        </h1>
+
+        <p id="hero-sub" class="mt-5 max-w-lg text-[0.95rem] leading-relaxed text-white/80 sm:mt-6 sm:text-lg">
+          A family-run homestay in the Dhauladhar — warm rooms, every meal from our
+          own kitchen, and a fire lit once it gets dark.
+        </p>
+
+        <div id="hero-cta" class="mt-7 flex flex-wrap items-center gap-x-3 gap-y-3 sm:mt-9 sm:gap-x-4">
+          <a
+            data-book
+            href="#book"
+            class="rounded-full bg-mint px-6 py-3 text-sm font-semibold text-ink transition hover:bg-white sm:px-7 sm:py-3.5"
+            >Book on WhatsApp</a
+          >
+          <a
+            href="#stay"
+            class="rounded-full border border-white/40 px-6 py-3 text-sm font-medium text-white backdrop-blur-sm transition hover:border-white hover:bg-white/10 sm:px-7 sm:py-3.5"
+            >See the rooms</a
+          >
+          <!-- filled from the rating in site.js; stays empty if none is set -->
+          <span id="hero-rating" class="w-full sm:ml-1 sm:w-auto"></span>
+        </div>
+      </div>
+
+      <!-- fact strip -->
+      <div class="absolute inset-x-0 bottom-0 border-t border-white/15 bg-ink/35 backdrop-blur-md">
+        <div
+          class="fact-strip mx-auto grid max-w-7xl grid-cols-2 divide-x divide-white/10 px-3 text-center sm:px-5 md:grid-cols-4 lg:px-10"
+        >
+          <div class="px-1.5 py-3 sm:px-2 sm:py-4">
+            <p class="font-display text-base text-white sm:text-lg">Valley views</p>
+            <p class="mt-0.5 text-[0.65rem] uppercase tracking-[0.12em] text-white/55 sm:text-[0.7rem] sm:tracking-[0.15em]">From every room</p>
+          </div>
+          <div class="px-1.5 py-3 sm:px-2 sm:py-4">
+            <p class="font-display text-base text-white sm:text-lg">All meals</p>
+            <p class="mt-0.5 text-[0.65rem] uppercase tracking-[0.12em] text-white/55 sm:text-[0.7rem] sm:tracking-[0.15em]">Home kitchen</p>
+          </div>
+          <div class="border-t border-white/10 px-1.5 py-3 sm:px-2 sm:py-4 md:border-t-0">
+            <p class="font-display text-base text-white sm:text-lg">Bonfire</p>
+            <p class="mt-0.5 text-[0.65rem] uppercase tracking-[0.12em] text-white/55 sm:text-[0.7rem] sm:tracking-[0.15em]">& camping tents</p>
+          </div>
+          <div class="border-t border-white/10 px-1.5 py-3 sm:px-2 sm:py-4 md:border-t-0">
+            <p class="font-display text-base text-white sm:text-lg">Parking</p>
+            <p class="mt-0.5 text-[0.65rem] uppercase tracking-[0.12em] text-white/55 sm:text-[0.7rem] sm:tracking-[0.15em]">Drive right up</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WELCOME ================= -->
+    <section id="welcome" class="bg-sand px-5 py-24 lg:px-10 lg:py-32">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2 lg:gap-20">
+        <div data-reveal>
+          <p class="text-[0.7rem] uppercase tracking-[0.3em] text-moss">The homestay</p>
+          <h2 class="mt-5 font-display text-4xl font-light leading-tight sm:text-5xl">
+            A house in the last village of the valley
+          </h2>
+          <div class="mt-7 space-y-5 text-[1.02rem] leading-relaxed text-ink/75">
+            <p>
+              Thamsar Echoes sits in Rajgundha, a small Himachali village ringed by oak,
+              pine and deodar, on the far side of the Billing ridge from Bir. There are
+              cabbage fields below the house, the Uhl river somewhere in the trees, and
+              very little else to interrupt the quiet.
+            </p>
+            <p>
+              We keep a few warm rooms, cook every meal ourselves, and light a fire in
+              the evening. It is a family home first and a homestay second — which is
+              exactly what most people come up here looking for.
+            </p>
+          </div>
+
+          <dl class="mt-9 grid grid-cols-2 gap-x-6 gap-y-5 border-t border-ink/10 pt-7 sm:grid-cols-3">
+            <div>
+              <dt class="text-[0.68rem] uppercase tracking-[0.15em] text-ink/45">Altitude</dt>
+              <dd class="mt-1 font-display text-lg">~2,700 m</dd>
+            </div>
+            <div>
+              <dt class="text-[0.68rem] uppercase tracking-[0.15em] text-ink/45">From Bir</dt>
+              <dd class="mt-1 font-display text-lg">30 km</dd>
+            </div>
+            <div>
+              <dt class="text-[0.68rem] uppercase tracking-[0.15em] text-ink/45">District</dt>
+              <dd class="mt-1 font-display text-lg">Kangra</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div data-reveal class="relative">
+          <img
+            src="images/web/exterior-01.jpg"
+            alt="The Thamsar Echoes house with the valley behind it"
+            loading="lazy"
+            class="aspect-[4/5] w-full rounded-sm object-cover shadow-2xl shadow-ink/20"
+          />
+          <img
+            src="images/web/view-04.jpg"
+            alt="Mountain view framed by a wooden guest room window"
+            loading="lazy"
+            class="absolute -bottom-10 -left-6 hidden w-2/5 rounded-sm border-[6px] border-sand object-cover shadow-xl sm:block"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ROOMS ================= -->
+    <section id="stay" class="bg-night px-5 py-24 text-sand lg:px-10 lg:py-32">
+      <div class="mx-auto max-w-7xl">
+        <div data-reveal class="max-w-2xl">
+          <p class="text-[0.7rem] uppercase tracking-[0.3em] text-mint">Where you sleep</p>
+          <h2 class="mt-5 font-display text-4xl font-light leading-tight sm:text-5xl">
+            Wood, wool, and a window you keep going back to
+          </h2>
+          <p class="mt-6 text-[1.02rem] leading-relaxed text-sand/70">
+            The rooms are simple and warm — panelled ceilings, thick quilts for the
+            cold nights, and windows that open straight onto the ridge. Every one has
+            its own bathroom with hot water.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <img
+            src="images/web/room-05.jpg"
+            alt="A room with a desk beside an open window looking onto the valley"
+            loading="lazy"
+            class="aspect-[4/3] w-full rounded-sm object-cover sm:col-span-2 lg:row-span-2 lg:aspect-auto lg:h-full"
+          />
+          <img
+            src="images/web/room-02.jpg"
+            alt="Double bed under a sloping wooden ceiling"
+            loading="lazy"
+            class="aspect-[4/3] w-full rounded-sm object-cover"
+          />
+          <img
+            src="images/web/room-04.jpg"
+            alt="Corner room with windows on two sides"
+            loading="lazy"
+            class="aspect-[4/3] w-full rounded-sm object-cover"
+          />
+          <img
+            src="images/web/room-06.jpg"
+            alt="Bed turned down beside a window full of green hillside"
+            loading="lazy"
+            class="aspect-[4/3] w-full rounded-sm object-cover"
+          />
+          <img
+            src="images/web/bath-03.jpg"
+            alt="Bathroom with washbasin and mirror"
+            loading="lazy"
+            class="aspect-[4/3] w-full rounded-sm object-cover"
+          />
+        </div>
+
+        <div class="mt-14 grid gap-10 border-t border-white/10 pt-12 lg:grid-cols-[1.2fr_1fr] lg:gap-16">
+          <div data-reveal>
+            <h3 class="font-display text-2xl">In every room</h3>
+            <ul data-stagger class="mt-6 grid gap-x-8 gap-y-3.5 text-[0.95rem] text-sand/75 sm:grid-cols-2">
+              <li class="flex gap-3"><span class="text-mint">·</span> Double bed with warm quilts</li>
+              <li class="flex gap-3"><span class="text-mint">·</span> Attached bathroom, hot water</li>
+              <li class="flex gap-3"><span class="text-mint">·</span> Mountain-facing windows</li>
+              <li class="flex gap-3"><span class="text-mint">·</span> Extra mattress on request</li>
+              <li class="flex gap-3"><span class="text-mint">·</span> Clean linen and towels</li>
+              <li class="flex gap-3"><span class="text-mint">·</span> Family rooms can be joined</li>
+            </ul>
+          </div>
+
+          <div data-reveal class="rounded-sm bg-white/[0.05] p-8 ring-1 ring-white/10">
+            <p class="text-[1.02rem] leading-relaxed text-sand/75">
+              Tariff depends on the season and how many of you there are. Send us your
+              dates and we will tell you what is free and what it costs.
+            </p>
+            <a
+              data-book
+              href="#book"
+              class="mt-6 inline-flex items-center gap-2 rounded-full bg-mint px-6 py-3 text-sm font-semibold text-ink transition hover:bg-white"
+            >
+              Check availability
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PARALLAX BAND ================= -->
+    <section class="relative h-[65vh] min-h-[380px] overflow-hidden">
+      <img
+        data-parallax
+        src="images/web/valley-07.jpg"
+        alt="The road winding down through the valley"
+        loading="lazy"
+        class="absolute inset-0 h-[125%] w-full object-cover"
+      />
+      <div class="absolute inset-0 bg-ink/45"></div>
+      <div class="relative flex h-full items-center justify-center px-6">
+        <p data-quote class="max-w-3xl text-center font-display text-2xl font-light leading-snug text-white sm:text-4xl">
+          “No traffic, no hurry. Just the fields, the forest,
+          and whatever the weather decides to do.”
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCES ================= -->
+    <section id="experiences" class="bg-sand px-5 py-24 lg:px-10 lg:py-32">
+      <div class="mx-auto max-w-7xl">
+        <div data-reveal class="max-w-2xl">
+          <p class="text-[0.7rem] uppercase tracking-[0.3em] text-moss">Things to do</p>
+          <h2 class="mt-5 font-display text-4xl font-light leading-tight sm:text-5xl">
+            Days here fill themselves
+          </h2>
+        </div>
+
+        <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article class="group overflow-hidden rounded-sm bg-white shadow-sm ring-1 ring-ink/5">
+            <img
+              src="images/stock/bonfire.jpg"
+              alt="Campfire burning under a mountain night sky"
+              loading="lazy"
+              class="aspect-[3/2] w-full object-cover transition duration-700 group-hover:scale-105"
+            />
+            <div class="p-7">
+              <h3 class="font-display text-2xl">Bonfire evenings</h3>
+              <p class="mt-3 text-sm leading-relaxed text-ink/65">
+                Once it gets dark and cold, the fire goes on outside. Chai, dinner and
+                whoever else is staying that night.
+              </p>
+            </div>
+          </article>
+
+          <article class="group overflow-hidden rounded-sm bg-white shadow-sm ring-1 ring-ink/5">
+            <img
+              src="images/stock/tent.jpg"
+              alt="Glowing camping tent under a starry mountain sky"
+              loading="lazy"
+              class="aspect-[3/2] w-full object-cover transition duration-700 group-hover:scale-105"
+            />
+            <div class="p-7">
+              <h3 class="font-display text-2xl">Tents & camping</h3>
+              <p class="mt-3 text-sm leading-relaxed text-ink/65">
+                If the rooms are full or you would rather sleep outside, we can pitch
+                tents on the ground near the house.
+              </p>
+            </div>
+          </article>
+
+          <article class="group overflow-hidden rounded-sm bg-white shadow-sm ring-1 ring-ink/5">
+            <img
+              src="images/stock/trek.jpg"
+              alt="Mountain ridge trail above the clouds"
+              loading="lazy"
+              class="aspect-[3/2] w-full object-cover transition duration-700 group-hover:scale-105"
+            />
+            <div class="p-7">
+              <h3 class="font-display text-2xl">Treks from the door</h3>
+              <p class="mt-3 text-sm leading-relaxed text-ink/65">
+                Thamsar Pass base camp, Plachak, Panhartu and the long route to Bara
+                Bhangal all start from this valley. We can arrange a guide.
+              </p>
+            </div>
+          </article>
+
+          <article class="group overflow-hidden rounded-sm bg-white shadow-sm ring-1 ring-ink/5">
+            <img
+              src="images/web/valley-01.jpg"
+              alt="Cabbage fields on the slope below the village"
+              loading="lazy"
+              class="aspect-[3/2] w-full object-cover transition duration-700 group-hover:scale-105"
+            />
+            <div class="p-7">
+              <h3 class="font-display text-2xl">Village walks</h3>
+              <p class="mt-3 text-sm leading-relaxed text-ink/65">
+                Wander through the cabbage fields and old stone-and-wood houses of
+                Rajgundha and Kukkar Gundha. An easy hour, or a whole afternoon.
+              </p>
+            </div>
+          </article>
+
+          <article class="group overflow-hidden rounded-sm bg-white shadow-sm ring-1 ring-ink/5">
+            <img
+              src="images/web/produce-02.jpg"
+              alt="Sacks of local rajma beans grown in the valley"
+              loading="lazy"
+              class="aspect-[3/2] w-full object-cover transition duration-700 group-hover:scale-105"
+            />
+            <div class="p-7">
+              <h3 class="font-display text-2xl">Local rajma & produce</h3>
+              <p class="mt-3 text-sm leading-relaxed text-ink/65">
+                The beans grown on these slopes are the real thing. Eat them at dinner,
+                and carry a kilo home if you like.
+              </p>
+            </div>
+          </article>
+
+          <article class="group overflow-hidden rounded-sm bg-white shadow-sm ring-1 ring-ink/5">
+            <img
+              src="images/stock/milkyway.jpg"
+              alt="Milky Way over a dark mountain landscape"
+              loading="lazy"
+              class="aspect-[3/2] w-full object-cover transition duration-700 group-hover:scale-105"
+            />
+            <div class="p-7">
+              <h3 class="font-display text-2xl">Stars, and nothing else</h3>
+              <p class="mt-3 text-sm leading-relaxed text-ink/65">
+                There is no light for miles. On a clear night you will see more of the
+                sky here than you have in years.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPLORE ================= -->
+    <section id="explore" class="relative overflow-hidden bg-ink px-5 py-24 text-sand lg:px-10 lg:py-32">
+      <img
+        src="images/web/valley-09.jpg"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        class="absolute inset-0 h-full w-full object-cover opacity-[0.12]"
+      />
+
+      <div class="relative mx-auto max-w-7xl">
+        <div data-reveal class="max-w-2xl">
+          <p class="text-[0.7rem] uppercase tracking-[0.3em] text-mint">Nearby</p>
+          <h2 class="mt-5 font-display text-4xl font-light leading-tight sm:text-5xl">
+            Places worth the walk
+          </h2>
+          <p class="mt-6 text-[1.02rem] leading-relaxed text-sand/70">
+            Everything below starts within a morning of the house. Ask us the night
+            before and we will pack food and point you at the right trail.
+          </p>
+        </div>
+
+        <div class="relative mt-16 pl-6 sm:pl-10">
+          <!-- line that draws itself as you scroll -->
+          <span
+            aria-hidden="true"
+            class="absolute left-0 top-2 h-full w-px origin-top bg-gradient-to-b from-mint via-mint/40 to-transparent"
+            data-explore-line
+          ></span>
+
+          <ul class="space-y-px">
+            <li class="place group relative -ml-6 border-t border-white/10 sm:-ml-10">
+              <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
+                <span class="w-8 shrink-0 font-display text-sm text-mint">01</span>
+                <div class="flex-1">
+                  <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
+                    The Uhl River
+                  </h3>
+                  <p class="mt-2 max-w-xl text-sm leading-relaxed text-sand/60">
+                    Born off the Thamsar glacier and running right below the village.
+                    Good for a slow morning walk, and for trout if you have a permit.
+                  </p>
+                </div>
+                <div class="flex shrink-0 flex-wrap gap-2">
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">Minutes away</span>
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">Easy walk</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="place group relative -ml-6 border-t border-white/10 sm:-ml-10">
+              <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
+                <span class="w-8 shrink-0 font-display text-sm text-mint">02</span>
+                <div class="flex-1">
+                  <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
+                    Hanuman Garh
+                  </h3>
+                  <p class="mt-2 max-w-xl text-sm leading-relaxed text-sand/60">
+                    A short climb to a ridge-top Hanuman temple with a full circle of
+                    the Dhauladhar around you. The best first walk of any stay.
+                  </p>
+                </div>
+                <div class="flex shrink-0 flex-wrap gap-2">
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">~1.5 hrs up</span>
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">3,070 m</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="place group relative -ml-6 border-t border-white/10 sm:-ml-10">
+              <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
+                <span class="w-8 shrink-0 font-display text-sm text-mint">03</span>
+                <div class="flex-1">
+                  <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
+                    Palachak Valley
+                  </h3>
+                  <p class="mt-2 max-w-xl text-sm leading-relaxed text-sand/60">
+                    Forest trail and wooden stream crossings up to open meadow, with a
+                    halt at Darmani on the way. A full and very rewarding day.
+                  </p>
+                </div>
+                <div class="flex shrink-0 flex-wrap gap-2">
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">6–8 km</span>
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">3–4 hrs</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="place group relative -ml-6 border-t border-white/10 sm:-ml-10">
+              <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
+                <span class="w-8 shrink-0 font-display text-sm text-mint">04</span>
+                <div class="flex-1">
+                  <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
+                    Thamsar Pass
+                  </h3>
+                  <p class="mt-2 max-w-xl text-sm leading-relaxed text-sand/60">
+                    The big one, and the pass this house is named after. Snow underfoot
+                    most of the year, and the crossing on to Bara Bhangal beyond it.
+                  </p>
+                </div>
+                <div class="flex shrink-0 flex-wrap gap-2">
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">4,878 m</span>
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">Multi-day</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="place group relative -ml-6 border-t border-white/10 sm:-ml-10">
+              <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
+                <span class="w-8 shrink-0 font-display text-sm text-mint">05</span>
+                <div class="flex-1">
+                  <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
+                    Paragliding at Bir Billing
+                  </h3>
+                  <p class="mt-2 max-w-xl text-sm leading-relaxed text-sand/60">
+                    One of the highest take-off sites in the world sits on the ridge you
+                    drove in over. Launch at Billing, land on the field at Bir.
+                  </p>
+                </div>
+                <div class="flex shrink-0 flex-wrap gap-2">
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">Billing take-off</span>
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">We can book it</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="place group relative -ml-6 border-t border-white/10 sm:-ml-10">
+              <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
+                <span class="w-8 shrink-0 font-display text-sm text-mint">06</span>
+                <div class="flex-1">
+                  <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
+                    Kothi Kohar Falls
+                  </h3>
+                  <p class="mt-2 max-w-xl text-sm leading-relaxed text-sand/60">
+                    Downstream along the Uhl towards Barot, a waterfall barely two
+                    hundred metres off the road. Easy to fold into a drive out.
+                  </p>
+                </div>
+                <div class="flex shrink-0 flex-wrap gap-2">
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">Towards Barot</span>
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">Short walk</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="place group relative -ml-6 border-y border-white/10 sm:-ml-10">
+              <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
+                <span class="w-8 shrink-0 font-display text-sm text-mint">07</span>
+                <div class="flex-1">
+                  <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
+                    Jaudi Waterfall
+                  </h3>
+                  <p class="mt-2 max-w-xl text-sm leading-relaxed text-sand/60">
+                    A local favourite that never makes it onto the tourist lists. Ask us
+                    and we will send someone who knows the way.
+                  </p>
+                </div>
+                <div class="flex shrink-0 flex-wrap gap-2">
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">Off the map</span>
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">Guide advised</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <p data-reveal class="mt-10 text-sm text-sand/50">
+          Guides for the longer treks are local, and we arrange them ourselves.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= FOOD ================= -->
+    <section id="food" class="bg-ink px-5 py-24 text-sand lg:px-10 lg:py-32">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2 lg:gap-20">
+        <div data-reveal class="order-2 grid grid-cols-2 gap-4 lg:order-1">
+          <img
+            src="images/web/dining-01.jpg"
+            alt="The dining room with wooden tables"
+            loading="lazy"
+            class="col-span-2 aspect-[16/10] w-full rounded-sm object-cover"
+          />
+          <img
+            src="images/web/produce-01.jpg"
+            alt="Local beans in sacks"
+            loading="lazy"
+            class="aspect-square w-full rounded-sm object-cover"
+          />
+          <img
+            src="images/web/dining-03.jpg"
+            alt="Tables laid out for a meal"
+            loading="lazy"
+            class="aspect-square w-full rounded-sm object-cover"
+          />
+        </div>
+
+        <div data-reveal class="order-1 lg:order-2">
+          <p class="text-[0.7rem] uppercase tracking-[0.3em] text-mint">At the table</p>
+          <h2 class="mt-5 font-display text-4xl font-light leading-tight sm:text-5xl">
+            Breakfast, lunch and dinner, cooked at home
+          </h2>
+          <div class="mt-7 space-y-5 text-[1.02rem] leading-relaxed text-sand/70">
+            <p>
+              There is no restaurant in Rajgundha and you will not need one. All three
+              meals come out of our kitchen — simple Himachali home food, hot, and as
+              much of it as you want.
+            </p>
+            <p>
+              Much of it is grown right here: rajma from the fields below, potatoes,
+              greens, fresh milk from the village. Tell us in advance if you are
+              vegetarian, vegan, or have anything you cannot eat.
+            </p>
+          </div>
+
+          <ul data-stagger class="mt-9 grid gap-3 sm:grid-cols-2">
+            <li class="flex items-center gap-3 rounded-sm bg-white/5 px-4 py-3 text-sm">
+              <span class="text-mint">✓</span> Breakfast with chai
+            </li>
+            <li class="flex items-center gap-3 rounded-sm bg-white/5 px-4 py-3 text-sm">
+              <span class="text-mint">✓</span> Hot lunch
+            </li>
+            <li class="flex items-center gap-3 rounded-sm bg-white/5 px-4 py-3 text-sm">
+              <span class="text-mint">✓</span> Dinner by the fire
+            </li>
+            <li class="flex items-center gap-3 rounded-sm bg-white/5 px-4 py-3 text-sm">
+              <span class="text-mint">✓</span> Veg & Himachali local
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SHOP TEASER ================= -->
+    <section id="shop" class="bg-sand px-5 pb-24 lg:px-10 lg:pb-32">
+      <div class="mx-auto max-w-7xl border-t border-ink/10 pt-20">
+        <div class="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
+          <div data-reveal>
+            <p class="text-[0.7rem] uppercase tracking-[0.3em] text-moss">The village shop</p>
+            <h2 class="mt-5 font-display text-4xl font-light leading-tight sm:text-5xl">
+              There is a shop at the front of the house
+            </h2>
+            <p class="mt-7 text-[1.02rem] leading-relaxed text-ink/75">
+              Rajma off the slopes below, Pahari wool for the cold, and the last
+              biscuits and batteries before the trail. It has served this village far
+              longer than we have taken guests.
+            </p>
+
+            <ul data-stagger class="mt-8 space-y-3 text-[0.95rem] text-ink/70">
+              <li class="flex gap-3"><span class="text-moss">·</span> Rajma and pulses grown in the valley</li>
+              <li class="flex gap-3"><span class="text-moss">·</span> Pahari woollens and handloom</li>
+              <li class="flex gap-3"><span class="text-moss">·</span> Supplies for the walk up</li>
+            </ul>
+
+            <a
+              href="shop.html"
+              class="mt-9 inline-flex items-center gap-2.5 rounded-full bg-ink px-7 py-3.5 text-sm font-semibold text-sand transition hover:bg-moss"
+            >
+              See the shop
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <img
+              src="images/web/produce-02.jpg"
+              alt="A sack of dark red rajma beans"
+              loading="lazy"
+              class="shop-card col-span-2 aspect-[16/10] w-full rounded-sm object-cover"
+            />
+            <img
+              src="images/web/lounge-03.jpg"
+              alt="Shop shelves stocked with everyday goods"
+              loading="lazy"
+              class="shop-card aspect-square w-full rounded-sm object-cover"
+            />
+            <img
+              src="images/web/produce-03.jpg"
+              alt="Golden beans in an open sack"
+              loading="lazy"
+              class="shop-card aspect-square w-full rounded-sm object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section id="gallery" class="bg-sand px-5 py-24 lg:px-10 lg:py-32">
+      <div class="mx-auto max-w-7xl">
+        <div data-reveal class="max-w-2xl">
+          <p class="text-[0.7rem] uppercase tracking-[0.3em] text-moss">Gallery</p>
+          <h2 class="mt-5 font-display text-4xl font-light leading-tight sm:text-5xl">
+            The house, and what surrounds it
+          </h2>
+        </div>
+
+        <div id="grid" class="mt-14 columns-2 gap-4 md:columns-3 lg:columns-4 [&>*]:mb-4">
+          <!-- filled by script -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REACH ================= -->
+    <section id="reach" class="relative overflow-hidden bg-night px-5 py-24 text-sand lg:px-10 lg:py-32">
+      <img
+        src="images/web/valley-02.jpg"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        class="absolute inset-0 h-full w-full object-cover opacity-15"
+      />
+      <div class="relative mx-auto max-w-7xl">
+        <div data-reveal class="max-w-2xl">
+          <p class="text-[0.7rem] uppercase tracking-[0.3em] text-mint">Getting here</p>
+          <h2 class="mt-5 font-display text-4xl font-light leading-tight sm:text-5xl">
+            Rajgundha is 30 km from Bir — about two hours
+          </h2>
+          <p class="mt-6 text-[1.02rem] leading-relaxed text-sand/70">
+            The last stretch is narrow and rough, so a sturdy vehicle helps. Tell us
+            when you are setting off and we will guide you in. There is parking at
+            the house.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-6 md:grid-cols-3">
+          <div class="reach-card rounded-sm bg-white/[0.06] p-7 ring-1 ring-white/10">
+            <p class="font-display text-3xl text-mint">01</p>
+            <h3 class="mt-4 font-display text-xl">Direct taxi from Bir</h3>
+            <p class="mt-3 text-sm leading-relaxed text-sand/65">
+              Easiest with family or luggage. Roughly two hours door to door, no walking
+              at the end.
+            </p>
+          </div>
+          <div class="reach-card rounded-sm bg-white/[0.06] p-7 ring-1 ring-white/10">
+            <p class="font-display text-3xl text-mint">02</p>
+            <h3 class="mt-4 font-display text-xl">Taxi to Billing, then trek</h3>
+            <p class="mt-3 text-sm leading-relaxed text-sand/65">
+              Drive the 18 km to Billing and walk the last 12 km through the forest.
+              The best way to arrive, if you have the legs.
+            </p>
+          </div>
+          <div class="reach-card rounded-sm bg-white/[0.06] p-7 ring-1 ring-white/10">
+            <p class="font-display text-3xl text-mint">03</p>
+            <h3 class="mt-4 font-display text-xl">Your own car or scooter</h3>
+            <p class="mt-3 text-sm leading-relaxed text-sand/65">
+              Doable in good weather. Ask us about road conditions first — in deep
+              winter the route can close with snow.
+            </p>
+          </div>
+        </div>
+
+        <div data-reveal class="mt-12 flex flex-wrap items-center gap-4">
+          <a
+            href="https://maps.app.goo.gl/CWvBi8RMSiuv8ZZd7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2.5 rounded-full border border-white/30 px-6 py-3 text-sm transition hover:border-mint hover:text-mint"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+            Open in Google Maps
+          </a>
+          <span class="text-sm text-sand/50">32.1014° N · 76.7675° E</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ (helps search + matches schema) ========== -->
+    <section id="faq" class="bg-sand px-5 pb-16 lg:px-10 lg:pb-20">
+      <div class="mx-auto max-w-3xl">
+        <div data-reveal class="text-center">
+          <p class="text-[0.7rem] uppercase tracking-[0.3em] text-moss">Good to know</p>
+          <h2 class="mt-5 font-display text-3xl font-light sm:text-4xl">
+            Homestay in Rajgundha Valley — quick answers
+          </h2>
+        </div>
+        <dl class="mt-10 divide-y divide-ink/10 border-y border-ink/10">
+          <div class="py-6" data-reveal>
+            <dt class="font-display text-xl">Where is Thamsar Echoes?</dt>
+            <dd class="mt-2 text-[0.98rem] leading-relaxed text-ink/70">
+              In Rajgundha Valley (also spelled Rajgunda), Kangra, Himachal — about 30 km /
+              two hours from Bir Billing, or via Barot / Badagran. We sit under the Dhauladhar
+              ridge toward Thamsar Pass.
+            </dd>
+          </div>
+          <div class="py-6" data-reveal>
+            <dt class="font-display text-xl">Can I camp or trek in from Billing?</dt>
+            <dd class="mt-2 text-[0.98rem] leading-relaxed text-ink/70">
+              Yes. Many guests drive or taxi to Billing and trek the forest road into
+              Rajgundha, or drive all the way. We have rooms and can pitch camping tents
+              near the house when you want to sleep outside.
+            </dd>
+          </div>
+          <div class="py-6" data-reveal>
+            <dt class="font-display text-xl">How do I book?</dt>
+            <dd class="mt-2 text-[0.98rem] leading-relaxed text-ink/70">
+              WhatsApp or call +91 82196 67142 with your dates and how many people. No agents,
+              no booking fees.
+            </dd>
+          </div>
+          <div class="py-6" data-reveal>
+            <dt class="font-display text-xl">Are meals and parking available?</dt>
+            <dd class="mt-2 text-[0.98rem] leading-relaxed text-ink/70">
+              Yes — breakfast, lunch and dinner from our kitchen, parking at the house, plus
+              bonfire evenings and camping tents when you want them.
+            </dd>
+          </div>
+          <div class="py-6" data-reveal>
+            <dt class="font-display text-xl">What is nearby?</dt>
+            <dd class="mt-2 text-[0.98rem] leading-relaxed text-ink/70">
+              Uhl River walks, Hanuman Garh, Palachak trek, longer routes to Thamsar Pass, and
+              paragliding at Bir Billing on the way in.
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ================= GOOGLE RATING (rendered from site.js) ========= -->
+    <section id="reviews" class="bg-sand px-5 pb-24 lg:px-10 lg:pb-32"></section>
+
+    <!-- ================= BOOK ================= -->
+    <section id="book" class="bg-sand px-5 py-24 lg:px-10 lg:py-32">
+      <div class="mx-auto max-w-4xl text-center">
+        <div data-reveal>
+          <p class="text-[0.7rem] uppercase tracking-[0.3em] text-moss">Booking</p>
+          <h2 class="mt-5 font-display text-4xl font-light leading-tight sm:text-6xl">
+            Come and stay with us
+          </h2>
+          <p class="mx-auto mt-6 max-w-xl text-[1.02rem] leading-relaxed text-ink/70">
+            We take bookings ourselves — no agents, no booking fees. Send a message
+            with your dates and how many people, and we will confirm.
+          </p>
+        </div>
+
+        <div class="mt-11 flex flex-wrap items-center justify-center gap-3">
+          <a
+            data-book
+            href="#"
+            class="inline-flex items-center gap-2.5 rounded-full bg-[#25D366] px-8 py-4 font-semibold text-white shadow-md transition hover:brightness-95"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1s-.7 1-.9 1.2c-.2.2-.3.2-.6.1s-1.3-.5-2.4-1.5c-.9-.8-1.5-1.8-1.6-2.1s0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5 4.4.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.5-.4z"
+              />
+              <path
+                d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"
+              />
+            </svg>
+            Book on WhatsApp
+          </a>
+          <a
+            data-call
+            href="#"
+            class="inline-flex items-center gap-2.5 rounded-full border border-ink/25 bg-white px-8 py-4 font-medium text-ink transition hover:border-ink hover:bg-ink hover:text-sand"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path
+                d="M5 3h3l2 5-2.5 1.5a12 12 0 0 0 5.5 5.5L15 12l5 2v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 5.2 2 2 0 0 1 5 3z"
+              />
+            </svg>
+            Call us
+          </a>
+          <a
+            data-instagram
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2.5 rounded-full border border-ink/25 bg-white px-8 py-4 font-medium text-ink transition hover:border-ink hover:bg-ink hover:text-sand"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+            Instagram
+          </a>
+        </div>
+
+        <p class="mt-8 text-sm text-ink/50">
+          If we miss your call, a WhatsApp message always reaches us.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-ink px-5 py-14 text-sand/70 lg:px-10">
+      <div class="mx-auto flex max-w-7xl flex-col items-center gap-8 md:flex-row md:justify-between">
+        <div class="flex items-center gap-4">
+          <img src="logo.png" alt="" class="h-16 w-16 object-contain" />
+          <div>
+            <p class="font-display text-xl text-sand">Thamsar Echoes Homestay</p>
+            <p class="mt-0.5 text-sm">
+              Rajgundha Valley · near Bir Billing · Kangra · Himachal Pradesh
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center gap-7 text-sm">
+          <a data-book href="#" class="transition hover:text-mint">WhatsApp</a>
+          <a data-call href="#" class="transition hover:text-mint">Call</a>
+          <a data-instagram href="#" target="_blank" rel="noopener noreferrer" class="transition hover:text-mint">
+            Instagram
+          </a>
+        </div>
+      </div>
+      <p class="mx-auto mt-10 max-w-7xl text-center text-xs text-sand/35 md:text-left">
+        © <span id="year"></span> Thamsar Echoes Homestay. Made in the mountains.
+      </p>
+    </footer>
+
+    <!-- Floating book CTA (mobile) — wired by site.js -->
+    <a
+      id="float-book"
+      data-book
+      href="#"
+      aria-label="Book on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path
+          d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1s-.7 1-.9 1.2c-.2.2-.3.2-.6.1s-1.3-.5-2.4-1.5c-.9-.8-1.5-1.8-1.6-2.1s0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5 4.4.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.5-.4z"
+        />
+        <path
+          d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"
+        />
+      </svg>
+      Book on WhatsApp
+    </a>
+
+    <!-- ================= LIGHTBOX ================= -->
+    <div
+      id="lightbox"
+      class="fixed inset-0 z-[70] hidden items-center justify-center bg-ink/95 p-4 backdrop-blur-sm"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Photo viewer"
+    >
+      <button id="lb-close" class="absolute right-5 top-5 p-3 text-white/80 transition hover:text-white" aria-label="Close">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+      <button id="lb-prev" class="absolute left-3 p-3 text-white/70 transition hover:text-white sm:left-8" aria-label="Previous">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M15 5l-7 7 7 7" />
+        </svg>
+      </button>
+      <button id="lb-next" class="absolute right-3 p-3 text-white/70 transition hover:text-white sm:right-8" aria-label="Next">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+      <img id="lb-img" src="" alt="" class="max-h-[85vh] max-w-[92vw] rounded-sm object-contain" />
+    </div>
+
+    <script src="vendor/gsap.min.js"></script>
+    <script src="vendor/ScrollTrigger.min.js"></script>
+    <script src="site.js"></script>
   </body>
 </html>
