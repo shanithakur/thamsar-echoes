@@ -38,6 +38,11 @@
     />
     <meta name="twitter:image" content="https://thamsarechoes.com/images/web/produce-01.jpg" />
 
+    <style>
+      h1 { font-size: 3.75rem; line-height: 1.05; font-weight: 300; }
+      h2 { font-size: 2.25rem; line-height: 1.25; font-weight: 300; }
+      p { font-size: 1.02rem; line-height: 1.625; }
+    </style>
     <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="vendor/tailwind.css" />
     <link rel="stylesheet" href="site.css" />
@@ -91,6 +96,7 @@
           <a class="text-[0.82rem] text-white/85 transition hover:text-white" href="index.html#stay">Rooms</a>
           <a class="text-[0.82rem] text-white/85 transition hover:text-white" href="index.html#experiences">Experiences</a>
           <a class="text-[0.82rem] text-white/85 transition hover:text-white" href="index.html#explore">Explore</a>
+          <a class="text-[0.82rem] text-white/85 transition hover:text-white" href="walks.html">Walks</a>
           <a class="text-[0.82rem] text-white/85 transition hover:text-white" href="index.html#food">Food</a>
           <a class="text-[0.82rem] font-semibold text-mint" href="shop.html">Shop</a>
           <a class="text-[0.82rem] text-white/85 transition hover:text-white" href="index.html#reach">Reach us</a>
@@ -128,6 +134,7 @@
         <a class="m-link font-display text-3xl text-sand" href="index.html">Home</a>
         <a class="m-link font-display text-3xl text-sand" href="index.html#stay">Rooms</a>
         <a class="m-link font-display text-3xl text-sand" href="index.html#explore">Explore</a>
+        <a class="m-link font-display text-3xl text-sand" href="walks.html">Walks</a>
         <a class="m-link font-display text-3xl text-sand" href="index.html#food">Food</a>
         <a class="m-link font-display text-3xl text-mint" href="shop.html">Shop</a>
         <a data-book class="m-link mt-3 font-display text-3xl text-mint" href="#">Book on WhatsApp</a>
@@ -296,7 +303,15 @@
           </p>
         </div>
 
-        <div data-reveal class="mt-11 flex flex-wrap items-center justify-center gap-3">
+        <a
+          data-call
+          href="tel:+918219667142"
+          class="phone-mark mt-8 inline-block font-display font-light text-ink transition hover:text-moss"
+        >
+          <span data-phone>+91 82196 67142</span>
+        </a>
+
+        <div data-reveal class="mt-8 flex flex-wrap items-center justify-center gap-3">
           <a
             data-book
             href="#"
@@ -337,16 +352,20 @@
             <p class="mt-0.5 text-sm">Rajgundha Valley · Kangra · Himachal Pradesh</p>
           </div>
         </a>
-        <div class="flex items-center gap-7 text-sm">
+        <div class="foot-links flex items-center gap-7 text-sm">
           <a href="index.html" class="transition hover:text-mint">Homestay</a>
+          <a href="walks.html" class="transition hover:text-mint">Walks</a>
           <a data-book href="#" class="transition hover:text-mint">WhatsApp</a>
+          <a data-call href="tel:+918219667142" class="font-semibold text-sand transition hover:text-mint"><span data-phone>+91 82196 67142</span></a>
           <a data-instagram href="#" target="_blank" rel="noopener noreferrer" class="transition hover:text-mint">
             Instagram
           </a>
         </div>
       </div>
-      <p class="mx-auto mt-10 max-w-7xl text-center text-xs text-sand/35 md:text-left">
+      <p class="mx-auto mt-10 max-w-7xl text-center text-xs md:text-left">
         © <span id="year"></span> Thamsar Echoes Homestay. Made in the mountains.
+        Site by Shani Thakur ·
+        <a href="https://shanithakur.com" class="text-sand underline-offset-4 transition hover:text-mint hover:underline" target="_blank" rel="noopener noreferrer">shanithakur.com</a>
       </p>
     </footer>
 

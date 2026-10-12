@@ -43,12 +43,20 @@ const digits = CONTACT.phone.replace(/\D/g, "");
 const waLink = `https://wa.me/${digits}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
 document.querySelectorAll("[data-book]").forEach((el) => {
-  el.href = waLink;
+  const message = el.dataset.message || WHATSAPP_MESSAGE;
+  el.href = `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
   el.target = "_blank";
   el.rel = "noopener noreferrer";
 });
+const phoneDisplay = CONTACT.phone.replace(
+  /^\+91(\d{5})(\d{5})$/,
+  (_, a, b) => `+91 ${a} ${b}`
+);
 document.querySelectorAll("[data-call]").forEach((el) => {
   el.href = `tel:${CONTACT.phone}`;
+});
+document.querySelectorAll("[data-phone]").forEach((el) => {
+  el.textContent = phoneDisplay;
 });
 document.querySelectorAll("[data-instagram]").forEach((el) => {
   el.href = `https://instagram.com/${CONTACT.instagram}`;
@@ -169,6 +177,58 @@ if (lightbox && grid) {
     if (e.key === "ArrowLeft") showPhoto(current - 1);
   });
 }
+
+/* Walk photographs use the same viewer, with their own set of pictures. */
+const walkGallery = document.getElementById("walk-gallery");
+if (lightbox && walkGallery) {
+  const lbImg = document.getElementById("lb-img");
+  const shots = [...walkGallery.querySelectorAll("[data-shot]")];
+  let current = 0;
+
+  const showShot = (i) => {
+    if (!shots.length) return;
+    current = (i + shots.length) % shots.length;
+    const img = shots[current].querySelector("img");
+    lbImg.src = img.currentSrc || img.src;
+    lbImg.alt = img.alt;
+    if (window.gsap) gsap.fromTo(lbImg, { opacity: 0.6 }, { opacity: 1, duration: 0.35 });
+  };
+
+  const closeShot = () => {
+    lightbox.classList.replace("flex", "hidden");
+    document.body.classList.remove("locked");
+  };
+
+  walkGallery.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-shot]");
+    if (!btn) return;
+    lightbox.classList.replace("hidden", "flex");
+    document.body.classList.add("locked");
+    showShot(shots.indexOf(btn));
+  });
+
+  document.getElementById("lb-close").addEventListener("click", closeShot);
+  document.getElementById("lb-next").addEventListener("click", () => showShot(current + 1));
+  document.getElementById("lb-prev").addEventListener("click", () => showShot(current - 1));
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeShot();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (!lightbox.classList.contains("flex")) return;
+    if (e.key === "Escape") closeShot();
+    if (e.key === "ArrowRight") showShot(current + 1);
+    if (e.key === "ArrowLeft") showShot(current - 1);
+  });
+}
+
+document.querySelectorAll(".faq-item").forEach((item) => {
+  item.addEventListener("toggle", () => {
+    if (!item.open) return;
+    document.querySelectorAll(".faq-item").forEach((other) => {
+      if (other !== item) other.open = false;
+    });
+  });
+});
 
 /* ----------------------------- google rating -------------------------- */
 const reviewsHost = document.getElementById("reviews");
@@ -389,7 +449,7 @@ if (reduced) {
       defaults: { ease: "power3.out" },
       scrollTrigger: {
         trigger: el,
-        start: "top 90%",
+        start: "top bottom",
         once: true,
         // if the block is already on screen (or jumped to via #hash), play immediately
         toggleActions: "play none none none",
@@ -409,7 +469,7 @@ if (reduced) {
         return;
       }
 
-      tl.from(kid, { y: 32, opacity: 0, duration: 0.85 }, at);
+      tl.from(kid, { y: 20, opacity: 0, duration: 0.7 }, at);
 
       const list = kid.matches("ul[data-stagger]") ? kid : kid.querySelector("ul[data-stagger]");
       if (list) {

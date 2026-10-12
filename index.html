@@ -44,6 +44,12 @@
     />
     <meta name="twitter:image" content="https://thamsarechoes.com/images/web/valley-03.jpg" />
 
+    <style>
+      h1 { font-size: 3.75rem; line-height: 1.05; font-weight: 300; }
+      h2 { font-size: 2.25rem; line-height: 1.25; font-weight: 300; }
+      h3 { font-size: 1.5rem; line-height: 1.25; font-weight: 400; }
+      p { font-size: 1.02rem; line-height: 1.625; }
+    </style>
     <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="vendor/tailwind.css" />
     <link rel="stylesheet" href="site.css" />
@@ -156,7 +162,7 @@
             "name": "What can I do near Rajgundha Valley?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Walks to the Uhl River and Hanuman Garh, day treks to Palachak, longer routes toward Thamsar Pass, and paragliding at Bir Billing on the ridge you drive in over."
+              "text": "Walks to the Uhl River and Hanuman Garh, a day out to Mahantu Lake, the Palachak trek, longer routes toward Thamsar Pass, and paragliding at Bir Billing on the ridge you drive in over."
             }
           }
         ]
@@ -194,10 +200,11 @@
           </span>
         </a>
 
-        <nav class="hidden items-center gap-6 lg:flex">
+        <nav class="hidden items-center gap-4 lg:flex">
           <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="#stay">Rooms</a>
           <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="#experiences">Experiences</a>
           <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="#explore">Explore</a>
+          <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="walks.html">Walks</a>
           <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="#food">Food</a>
           <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="shop.html">Shop</a>
           <a class="nav-link text-[0.82rem] text-white/85 transition hover:text-white" href="#gallery">Gallery</a>
@@ -237,6 +244,7 @@
         <a class="m-link font-display text-3xl text-sand" href="#stay">Rooms</a>
         <a class="m-link font-display text-3xl text-sand" href="#experiences">Experiences</a>
         <a class="m-link font-display text-3xl text-sand" href="#explore">Explore</a>
+        <a class="m-link font-display text-3xl text-sand" href="walks.html">Walks</a>
         <a class="m-link font-display text-3xl text-sand" href="#food">Food</a>
         <a class="m-link font-display text-3xl text-sand" href="shop.html">Shop</a>
         <a class="m-link font-display text-3xl text-sand" href="#gallery">Gallery</a>
@@ -256,14 +264,16 @@
         />
         <img
           class="hero-slide absolute inset-0 h-full w-full object-cover opacity-0"
+          src="images/web/view-02.jpg"
           data-src="images/web/view-02.jpg"
-          alt=""
+          alt="Ridge lines from a guest room window"
           aria-hidden="true"
         />
         <img
           class="hero-slide absolute inset-0 h-full w-full object-cover opacity-0"
+          src="images/web/valley-07.jpg"
           data-src="images/web/valley-07.jpg"
-          alt=""
+          alt="The road winding down through the valley"
           aria-hidden="true"
         />
       </div>
@@ -302,8 +312,20 @@
             class="rounded-full border border-white/40 px-6 py-3 text-sm font-medium text-white backdrop-blur-sm transition hover:border-white hover:bg-white/10 sm:px-7 sm:py-3.5"
             >See the rooms</a
           >
-          <!-- filled from the rating in site.js; stays empty if none is set -->
-          <span id="hero-rating" class="w-full sm:ml-1 sm:w-auto"></span>
+          <div class="hero-meta">
+            <a
+              data-call
+              href="tel:+918219667142"
+              class="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2.5 text-sm text-white backdrop-blur-sm transition hover:border-white/60"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M5 3h3l2 5-2.5 1.5a12 12 0 0 0 5.5 5.5L15 12l5 2v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 5.2 2 2 0 0 1 5 3z" />
+              </svg>
+              <span data-phone class="font-semibold">+91 82196 67142</span>
+            </a>
+            <!-- filled from the rating in site.js; stays empty if none is set -->
+            <span id="hero-rating" class="inline-flex"></span>
+          </div>
         </div>
       </div>
 
@@ -616,6 +638,29 @@
           </p>
         </div>
 
+        <a href="walks.html" data-reveal class="group mt-14 grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
+          <span class="block overflow-hidden rounded-sm shadow-2xl shadow-ink/20">
+            <img
+              src="images/web/lake-01.jpg"
+              alt="A small lake in a meadow above Rajgundha, cloud reflected in the water"
+              class="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105"
+            />
+          </span>
+          <span class="block">
+            <h3 class="font-display text-3xl font-light leading-tight text-sand sm:text-4xl">
+              Mahantu Lake
+            </h3>
+            <p class="mt-4 max-w-xl text-[1.02rem] leading-relaxed text-sand/75">
+              A small lake above the village. You go in the morning, rest, eat a packed
+              lunch, and you are back by evening.
+            </p>
+            <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-mint">
+              Read this walk
+              <span aria-hidden="true">&rarr;</span>
+            </span>
+          </span>
+        </a>
+
         <div class="relative mt-16 pl-6 sm:pl-10">
           <!-- line that draws itself as you scroll -->
           <span
@@ -663,9 +708,28 @@
               </div>
             </li>
 
-            <li class="place group relative -ml-6 border-t border-white/10 sm:-ml-10">
-              <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
+                        <li class="place group relative -ml-6 border-t border-white/10 sm:-ml-10">
+              <a href="walks.html" class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
                 <span class="w-8 shrink-0 font-display text-sm text-mint">03</span>
+                <div class="flex-1">
+                  <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
+                    Mahantu Lake
+                  </h3>
+                  <p class="mt-2 max-w-xl text-sm leading-relaxed text-sand/60">
+                    A small lake above the village. Go in the morning, rest, eat a packed
+                    lunch, and be back by evening. Photographs are on the walks page.
+                  </p>
+                </div>
+                <div class="flex shrink-0 flex-wrap gap-2">
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">Day return</span>
+                  <span class="rounded-full border border-white/15 px-3 py-1 text-xs text-sand/70">Packed lunch</span>
+                </div>
+              </a>
+            </li>
+
+<li class="place group relative -ml-6 border-t border-white/10 sm:-ml-10">
+              <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
+                <span class="w-8 shrink-0 font-display text-sm text-mint">04</span>
                 <div class="flex-1">
                   <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
                     Palachak Valley
@@ -684,7 +748,7 @@
 
             <li class="place group relative -ml-6 border-t border-white/10 sm:-ml-10">
               <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
-                <span class="w-8 shrink-0 font-display text-sm text-mint">04</span>
+                <span class="w-8 shrink-0 font-display text-sm text-mint">05</span>
                 <div class="flex-1">
                   <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
                     Thamsar Pass
@@ -703,7 +767,7 @@
 
             <li class="place group relative -ml-6 border-t border-white/10 sm:-ml-10">
               <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
-                <span class="w-8 shrink-0 font-display text-sm text-mint">05</span>
+                <span class="w-8 shrink-0 font-display text-sm text-mint">06</span>
                 <div class="flex-1">
                   <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
                     Paragliding at Bir Billing
@@ -722,7 +786,7 @@
 
             <li class="place group relative -ml-6 border-t border-white/10 sm:-ml-10">
               <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
-                <span class="w-8 shrink-0 font-display text-sm text-mint">06</span>
+                <span class="w-8 shrink-0 font-display text-sm text-mint">07</span>
                 <div class="flex-1">
                   <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
                     Kothi Kohar Falls
@@ -741,7 +805,7 @@
 
             <li class="place group relative -ml-6 border-y border-white/10 sm:-ml-10">
               <div class="flex flex-col gap-4 px-6 py-7 transition-colors duration-500 group-hover:bg-white/[0.04] sm:flex-row sm:items-baseline sm:gap-8 sm:px-10">
-                <span class="w-8 shrink-0 font-display text-sm text-mint">07</span>
+                <span class="w-8 shrink-0 font-display text-sm text-mint">08</span>
                 <div class="flex-1">
                   <h3 class="font-display text-2xl transition-transform duration-500 group-hover:translate-x-1 sm:text-3xl">
                     Jaudi Waterfall
@@ -964,53 +1028,84 @@
     </section>
 
     <!-- ================= FAQ (helps search + matches schema) ========== -->
-    <section id="faq" class="bg-sand px-5 pb-16 lg:px-10 lg:pb-20">
-      <div class="mx-auto max-w-3xl">
-        <div data-reveal class="text-center">
-          <p class="text-[0.7rem] uppercase tracking-[0.3em] text-moss">Good to know</p>
-          <h2 class="mt-5 font-display text-3xl font-light sm:text-4xl">
-            Homestay in Rajgundha Valley — quick answers
+    <section id="faq" class="bg-sand px-5 py-24 lg:px-10 lg:py-32">
+      <div class="faq-layout mx-auto max-w-7xl">
+        <div data-reveal>
+          <h2 class="font-display text-4xl font-light leading-tight sm:text-5xl">
+            Before you write to us
           </h2>
+          <p class="mt-6 max-w-sm text-[1.02rem] leading-relaxed text-ink/75">
+            Five short answers. If yours is not here, send the question with your dates
+            and how many people.
+          </p>
         </div>
-        <dl class="mt-10 divide-y divide-ink/10 border-y border-ink/10">
-          <div class="py-6" data-reveal>
-            <dt class="font-display text-xl">Where is Thamsar Echoes?</dt>
-            <dd class="mt-2 text-[0.98rem] leading-relaxed text-ink/70">
-              In Rajgundha Valley (also spelled Rajgunda), Kangra, Himachal — about 30 km /
-              two hours from Bir Billing, or via Barot / Badagran. We sit under the Dhauladhar
-              ridge toward Thamsar Pass.
-            </dd>
-          </div>
-          <div class="py-6" data-reveal>
-            <dt class="font-display text-xl">Can I camp or trek in from Billing?</dt>
-            <dd class="mt-2 text-[0.98rem] leading-relaxed text-ink/70">
-              Yes. Many guests drive or taxi to Billing and trek the forest road into
-              Rajgundha, or drive all the way. We have rooms and can pitch camping tents
-              near the house when you want to sleep outside.
-            </dd>
-          </div>
-          <div class="py-6" data-reveal>
-            <dt class="font-display text-xl">How do I book?</dt>
-            <dd class="mt-2 text-[0.98rem] leading-relaxed text-ink/70">
-              WhatsApp or call +91 82196 67142 with your dates and how many people. No agents,
-              no booking fees.
-            </dd>
-          </div>
-          <div class="py-6" data-reveal>
-            <dt class="font-display text-xl">Are meals and parking available?</dt>
-            <dd class="mt-2 text-[0.98rem] leading-relaxed text-ink/70">
-              Yes — breakfast, lunch and dinner from our kitchen, parking at the house, plus
-              bonfire evenings and camping tents when you want them.
-            </dd>
-          </div>
-          <div class="py-6" data-reveal>
-            <dt class="font-display text-xl">What is nearby?</dt>
-            <dd class="mt-2 text-[0.98rem] leading-relaxed text-ink/70">
-              Uhl River walks, Hanuman Garh, Palachak trek, longer routes to Thamsar Pass, and
-              paragliding at Bir Billing on the way in.
-            </dd>
-          </div>
-        </dl>
+
+        <div class="faq-sheet" data-reveal>
+          <details class="faq-item" name="stay-faq" open>
+            <summary class="font-display">
+              <span>Where is Thamsar Echoes?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                In Rajgundha Valley (also spelled Rajgunda), Kangra, Himachal — about 30 km /
+                two hours from Bir Billing, or via Barot / Badagran. We sit under the Dhauladhar
+                ridge toward Thamsar Pass.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item" name="stay-faq">
+            <summary class="font-display">
+              <span>Can I camp or trek in from Billing?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Yes. Many guests drive or taxi to Billing and trek the forest road into
+                Rajgundha, or drive all the way. We have rooms and can pitch camping tents
+                near the house when you want to sleep outside.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item" name="stay-faq">
+            <summary class="font-display">
+              <span>How do I book?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                WhatsApp or call +91 82196 67142 with your dates and how many people. No agents,
+                no booking fees.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item" name="stay-faq">
+            <summary class="font-display">
+              <span>Are meals and parking available?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Yes — breakfast, lunch and dinner from our kitchen, parking at the house, plus
+                bonfire evenings and camping tents when you want them.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item" name="stay-faq">
+            <summary class="font-display">
+              <span>What is nearby?</span>
+              <span class="faq-plus" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Uhl River walks, Hanuman Garh,
+                <a href="walks.html" class="font-semibold text-ink underline underline-offset-4">Mahantu Lake</a>,
+                the Palachak trek, longer routes to Thamsar Pass, and paragliding at Bir Billing
+                on the way in.
+              </p>
+            </div>
+          </details>
+        </div>
       </div>
     </section>
 
@@ -1031,7 +1126,15 @@
           </p>
         </div>
 
-        <div class="mt-11 flex flex-wrap items-center justify-center gap-3">
+        <a
+          data-call
+          href="tel:+918219667142"
+          class="phone-mark mt-8 inline-block font-display font-light text-ink transition hover:text-moss"
+        >
+          <span data-phone>+91 82196 67142</span>
+        </a>
+
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
           <a
             data-book
             href="#"
@@ -1093,16 +1196,19 @@
             </p>
           </div>
         </div>
-        <div class="flex items-center gap-7 text-sm">
+        <div class="foot-links flex items-center gap-7 text-sm">
+          <a href="walks.html" class="transition hover:text-mint">Walks</a>
           <a data-book href="#" class="transition hover:text-mint">WhatsApp</a>
-          <a data-call href="#" class="transition hover:text-mint">Call</a>
+          <a data-call href="tel:+918219667142" class="font-semibold text-sand transition hover:text-mint"><span data-phone>+91 82196 67142</span></a>
           <a data-instagram href="#" target="_blank" rel="noopener noreferrer" class="transition hover:text-mint">
             Instagram
           </a>
         </div>
       </div>
-      <p class="mx-auto mt-10 max-w-7xl text-center text-xs text-sand/35 md:text-left">
+      <p class="mx-auto mt-10 max-w-7xl text-center text-xs md:text-left">
         © <span id="year"></span> Thamsar Echoes Homestay. Made in the mountains.
+        Site by Shani Thakur ·
+        <a href="https://shanithakur.com" class="text-sand underline-offset-4 transition hover:text-mint hover:underline" target="_blank" rel="noopener noreferrer">shanithakur.com</a>
       </p>
     </footer>
 
@@ -1147,11 +1253,14 @@
           <path d="M9 5l7 7-7 7" />
         </svg>
       </button>
-      <img id="lb-img" src="" alt="" class="max-h-[85vh] max-w-[92vw] rounded-sm object-contain" />
+      <img id="lb-img" src="images/web/valley-03.jpg" alt="Pines, cloud and the open floor of Rajgundha Valley" class="max-h-[85vh] max-w-[92vw] rounded-sm object-contain" />
     </div>
 
     <script src="vendor/gsap.min.js"></script>
     <script src="vendor/ScrollTrigger.min.js"></script>
     <script src="site.js"></script>
-  </body>
+  <!-- impeccable-live-start -->
+<script src="http://localhost:8400/live.js?token=b70e1e96-f5f0-4136-821f-66f9a88f92e8"></script>
+<!-- impeccable-live-end -->
+</body>
 </html>
